@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function test()
+{
+a="Hello";
+b="Hello";
+c=document.f1.t1.value;
+d=document.f1.t2.value;
+if(a==c && b==d)
+	{
+	alert("valid user");
+	}
+else
+{
+	alert("invalid");
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+username:<input type="text" name="t1"><br/>
+password:<input type="password" name="t2"><br/>
+<input type="button" name="b1" value="submit" onclick="test()">
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function rev(n)
+{
+sum=0;
+while(n>0)
+{
+r=parseInt(n%10);
+sum=(sum*10)+r;
+n=parseInt(n/10);
+
+	}
+return sum;
+}
+function fun()
+{
+a=parseInt(document.f1.t1.value);
+	b=a*a;
+c=rev(a);
+d=c*c;
+e=rev(d)
+if(b==e)
+{
+document.write(a+" IS AN ADAM NUMBER");
+}
+Else
+{
+document.write(a+" IS NOT AN ADAM NUMBER");
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+NUMBER:<input type="number" name="t1"/><BR/>
+<input type = "button" name = "b1" value = "Click" onclick = "fun()"/>
+</form>
+</body>
+</html>
